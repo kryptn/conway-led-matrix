@@ -1,14 +1,19 @@
 # Conway's Game of Life
 #### On a 16x16 LED Matrix
 
-## materials
+The code will generate a random game state and run it until it detects that it's in a repeating state with a unique-enough hashing algorithm
 
-required per display piece: 
+if the game state is infinite, after a minimum time limit, the game will start making attempts to reset
+
+
+## Materials
+
+Required per display piece: 
 
 - [esp8266][1]
 - [16x16 RGB LED matrix][2]
 
-additional materials necessary:
+Additional materials necessary:
 
 - [wires][3]
 - [knurled nuts][4]
@@ -16,7 +21,7 @@ additional materials necessary:
 - [set with m3 screws][6]
 - [aio robotics white pla][7]
 
-tools needed:
+Tools needed:
 
 - 3d printer
   - largest piece is 168x170x50mm when flat
@@ -25,17 +30,17 @@ tools needed:
 - flush cutters
 
 
-| item                 |  startup cost | cost per piece |
-|----------------------|--------------:|---------------:|
-| [board][1]           |           $17 |          $5.67 |
-| [LED Matrix][2]      |           $35 |            $35 |
-| [wires][3]           |            $7 |                |
-| [heatset inserts][4] |           $20 |                |
-| [m3 tip][5]          |           $19 |                |
-| [m3 screws][6]       |           $20 |                |
-| [white pla][7]       |           $14 |                |
-| 3d printer           |         $250+ |                |
-| **total**            |         $132+ |            $41 |
+| item                     |  startup cost | cost per piece |
+|:-------------------------|--------------:|---------------:|
+| [esp8622 board][1]       |           $17 |          $5.67 |
+| [16x16 LED Matrix][2]    |           $35 |            $35 |
+| [m-f jumper wires][3]    |            $7 |                |
+| [m3 heatset inserts][4]  |           $20 |                |
+| [m3 heatset tip][5]      |           $19 |                |
+| [m3 screws][6]           |           $20 |                |
+| [white pla][7]           |           $14 |                |
+| 3d printer               |         $250+ |                |
+| **total**                |         $132+ |            $41 |
 
 ## Instructions
 
