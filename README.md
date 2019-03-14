@@ -19,8 +19,11 @@ additional materials necessary:
 tools needed:
 
 - 3d printer
+  - largest piece is 168x170x50mm when flat
 - solder iron
   - with [m3 insert tip][5]
+- flush cutters
+
 
 | item                 |  startup cost | cost per piece |
 |----------------------|--------------:|---------------:|
@@ -36,21 +39,25 @@ tools needed:
 
 ## Instructions
 
-1.  print both pieces. my settings:
+1.  print both pieces
+    - rotate the [back insert][stl-back] 180deg around X
     - 0.15mm layer height
-    - first layer 210c, other layers 205c
-    - bed 60c
     - 20% gyroid infill
+    - my settings for [aiorobotics white][7]:
+        - first layer 210c, other layers 205c
+        - bed 60c
 2. flash code onto esp8266
     - may have to change some settings
     - arduino ide
     - board manager, [details on board store page][1]
-    - code link here
+    - [see conway.ino][ino-code]
 3. prepare board
-    - cut off JST with DOUT
-    - cut off middle 5v/gnd
-4. insert heat insets on markings
+    - cut off JST with DOUT wires
+    - cut off middle 5v/gnd wires
+4. insert heat insets on markings on the [back insert][stl-back]
+    - 3 m3x6x5mm
 5. fasten flashed esp8266
+    - 3 m3x8mm
     - with pins facing out
     - with usb on bottom
 6. assemble
@@ -61,6 +68,20 @@ tools needed:
     - connect 5v to Vin, Gnd to Gnd, DIN to GPIO5
 7. Plug in USB
 
+
+| item                 |  startup cost | cost per piece |
+|----------------------|--------------:|---------------:|
+| [board][1]           |           $17 |          $5.67 |
+| [LED Matrix][2]      |           $35 |            $35 |
+| [wires][3]           |            $7 |                |
+| [heatset inserts][4] |           $20 |                |
+| [m3 tip][5]          |           $19 |                |
+| [m3 screws][6]       |           $20 |                |
+| [white pla][7]       |           $14 |                |
+| 3d printer           |         $250+ |                |
+| **total**            |         $132+ |            $41 |
+
+
 [1]: https://smile.amazon.com/gp/product/B07LCMNXTN
 [2]: https://smile.amazon.com/gp/product/B01HGJRBWW
 [3]: https://smile.amazon.com/gp/product/B01EV70C78
@@ -68,3 +89,7 @@ tools needed:
 [5]: https://smile.amazon.com/gp/product/B078K72615
 [6]: https://smile.amazon.com/gp/product/B01MT836J4
 [7]: https://smile.amazon.com/gp/product/B01HYYPMAM
+
+[stl-back]: conway-back-insert-v3.3.stl
+[stl-body]: conway-main-body-v3.2.stl
+[ino-code]: conway.ino
