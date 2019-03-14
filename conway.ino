@@ -7,6 +7,9 @@
 #define COLS 16
 #define PIXELS ROWS*COLS
 
+// a new game spawns this many alive cells
+#define NEW_GAME_POPULATION 20
+
 // allow this many cycles before reset
 #define REPEATS 8
 #define MAX_REPEAT_CYCLE 4
@@ -52,7 +55,7 @@ void tryIntervention() {
   }
 
   if (cmp > random(0, ENTROPY_MAX*10)) {
-    randomState(20);
+    randomState(NEW_GAME_POPULATION);
     age = 0;
   }
 }
